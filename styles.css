@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --primary-light: #64d8cb;
+  --primary-normal: #26a69a;
+  --primary-dark: #00766c;
+
+  --secondary-light: #be9c91;
+  --secondary-normal: #8d6e63;
+  --secondary-dark: #5f4339;
+
+  --operations-light: #fbcc57;
+  --operations-normal: #fbc02d;
+  --operations-dark: #af861f;
+
+  --danger-light: #f27573;
+  --danger-normal: #ef5350;
+  --danger-dark: #a73a38;
+}
+
+.container {
+  background-color: var(--secondary-light);
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.calcBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: var(--primary-normal);
+
+  width: 350px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px 10px var(--secondary-dark);
+}
+
+.inputs {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: end;
+  border-bottom: 1px solid var(--secondary-dark);
+}
+.numbers {
+  color: var(--secondary-dark);
+  font-size: 55px;
+
+  margin: 15px;
+}
+
+.buttons {
+  width: 100%;
+  height: 75%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.num {
+  background-color: transparent;
+
+  outline: 0 none;
+  border: 1px solid var(--secondary-dark);
+  border-radius: 5px;
+
+  margin: 5px;
+
+  color: var(--secondary-dark);
+  font-size: 24px;
+}
+
+.op {
+  background-color: var(--operations-light);
+
+  outline: 0 none;
+  border: 1px solid var(--secondary-dark);
+  border-radius: 5px;
+
+  margin: 5px;
+
+  color: var(--secondary-dark);
+  font-size: 24px;
+}
+
+.danger {
+  background-color: var(--danger-normal);
+
+  outline: 0 none;
+  border: 1px solid var(--secondary-dark);
+  border-radius: 5px;
+
+  margin: 5px;
+
+  color: var(--secondary-dark);
+  font-size: 24px;
+}
+
+.num:hover {
+  cursor: pointer;
+
+  background-color: var(--primary-light);
+  color: var(--secondary-dark);
+
+  transition: 0.3s;
+}
+
+.op:hover {
+  cursor: pointer;
+
+  background-color: var(--operations-dark);
+  color: var(--secondary-dark);
+
+  transition: 0.3s;
+}
+
+.danger:hover {
+  cursor: pointer;
+
+  background-color: var(--danger-dark);
+  color: var(--secondary-dark);
+
+  transition: 0.3s;
+}
